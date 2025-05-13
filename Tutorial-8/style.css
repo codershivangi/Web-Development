@@ -1,11 +1,11 @@
 .red{
-    color: red;
+ color: red;
 }
 
-.bg-green{
+.bg-yellow{
     background-color: yellow;
 }
 
 #firstdiv{
-    background-color: red;
+    /* background-color: red; */
 }
