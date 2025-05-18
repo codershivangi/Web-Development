@@ -1,1 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS More on Selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: red;
+        } */
+        /* .box::first-line{
+            color:yellow;
+        } */
+        /*Universal Selectors*/
 
+        /* .boxes *{
+            color: blue;
+            border: 2px solid mediumvioletred;
+        }
+         
+        p, a, .box, [data-color="primary"]{    /*Grouping of selectors*/
+            /* margin-top: 45px; */
+            /* padding-top: 45px;
+        } */
+
+        /* .box:nth-child(even){
+            background-color: blueviolet;
+        }
+
+        .box:nth-child(odd){
+            background-color: red;
+        } */
+        
+        /* .box:nth-last-child(2){
+            background-color: yellow;
+        }
+        */
+        .boxes::before {
+            content:"Harry is good";
+            color:brown;
+        
+        }
+
+        .boxes::after {
+            content:"Sigma course is good";
+            color:aqua;
+        }
+        
+        ::selection {
+            background-color: black;
+            color:orangered;
+        }
+        .box::first-letter {
+             color:mediumspringgreen;
+             font-size:45px;
+        }
+        input::placeholder{
+            color:gold;
+            /* font-size: 40px; */
+        }
+        /* All these are pseudo selectors and pseudo elements*/
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Hey I am a box</div>
+        <div class="box">Hey I am a box</div>
+        <div class="box">Hey I am a box</div>
+        <input type="text" placeholder="Type your own name here">
+
+    </div>
+</body>
+</html>
